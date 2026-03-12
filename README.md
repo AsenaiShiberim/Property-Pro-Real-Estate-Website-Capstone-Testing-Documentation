@@ -13,7 +13,7 @@
 
 Property Pro is a real estate marketplace our team built for our capstone at SAIT. The idea behind it came from Calgary's rapid population growth — the city grew by 5.6% in 2023 alone, so there was a real story behind why a platform like this would matter.
 
-The app connects three types of users: buyers looking for properties, sellers managing their listings, and property managers handling bookings and inquiries. Each group has their own dashboard and permissions, which made the testing side of things genuinely interesting — there were a lot of moving parts to validate.
+The app connects two types of users: buyers looking for properties & sellers managing their listings. Each group has their own dashboard and permissions, which made the testing side of things fun!!
 
 My personal contributions covered front-end development and QA testing. This repo focuses specifically on the testing work — the strategy, execution, findings, and lessons learned along the way.
 
@@ -31,10 +31,6 @@ The platform had a lot going on, so we scoped our testing around the features th
 - Did search filters, sorting, and results display work correctly?
 - Could new users register and log in without issues?
 
-**For Property Managers:**
-- Did the management dashboard correctly track listings?
-- Could managers book and handle viewing appointments?
-
 We also intentionally kept some things out of scope — third-party payment gateways, mobile app testing, and multi-language support were all excluded since they were outside the boundaries of the project.
 
 ---
@@ -50,7 +46,7 @@ By the end of testing we had executed **128 test cases** across the platform. He
 | Failed | 28 |
 | Overall Success Rate | 73.3% |
 
-The 73.3% success rate sounds like it has room to grow, but context matters here — a lot of the failures were caught early in the sprint cycle and fixed before the next round. The success rate trended upward week over week, which was the real indicator that the process was working.
+The 73.3% success has room to grow, but context matters here — a lot of the failures were caught early in the sprint cycle and fixed before the next round. The success rate trended upward week over week, which was the real indicator that the process was working.
 
 **Sprint-by-sprint breakdown:**
 
@@ -68,7 +64,7 @@ The 73.3% success rate sounds like it has room to grow, but context matters here
 
 We covered five main types of testing:
 
-**Functional Testing** — The bread and butter. Verified CRUD operations, authentication flows, search and filtering, and role-based access. This is where most of the bugs lived.
+**Functional Testing** — Verified CRUD operations, authentication flows, search and filtering, and role-based access. This is where most of the bugs lived.
 
 **Security Testing** — Made sure users couldn't access pages they weren't supposed to. Admin dashboards, seller-only features, and login/logout flows were all tested for unauthorized access.
 
@@ -120,9 +116,9 @@ Search and filter integration also came together well once the inconsistencies w
 
 ## What I'd do differently
 
-Honestly, the biggest thing I learned from this project is that a passing response code doesn't mean the feature works end to end. TC005 was a perfect example — the edit flow returned no errors but the navigation was broken. You have to actually follow the full user journey, not just check that individual pieces respond correctly.
+The biggest thing I learned from this project is that a passing response code doesn't mean the feature works end to end. TC005 was a perfect example — the edit flow returned no errors but the navigation was broken. You have to actually follow the full user journey, not just check that individual pieces respond correctly.
 
-I'd also push for earlier performance testing next time. We left load testing a bit late in the cycle and it would have been useful to know sooner how the system held up under concurrent users.
+I'd also push for earlier performance testing next time. We left that part a bit late in the cycle and it would have been useful to know sooner how the system held up under concurrent users.
 
 ---
 
@@ -133,7 +129,8 @@ I'd also push for earlier performance testing next time. We left load testing a 
 - `Test_Plan.pdf` — 50 test case documentation and objectives
 - `Test_Execution.pdf` — defect log, sprint tracking, and results
 - `SoftwareTestingPresentation.pdf` — final capstone presentation slides
+- *`Youtube video walkthrough of the project` - https://www.youtube.com/watch?v=iQ2xqrG_-18
 
 ---
-
+*The demo video was recorded during the final stages of feature implementation. Some functionality may appear incomplete or missing as testing and development were running in parallel at the time of filming.* .
 *Group capstone project built with a team of 4 at SAIT, Software Development Diploma, 2024.*
