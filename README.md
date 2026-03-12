@@ -125,9 +125,9 @@ I'd also push for earlier performance testing next time. We left that part a bit
 ## Files in this repo
 
 - `README.md` — this file
-- `Test_Strategy.pdf` — full risk analysis and testing approach
-- `Test_Plan.pdf` — 50 test case documentation and objectives
-- `Test_Execution.pdf` — defect log, sprint tracking, and results
+- `Group3_Developing_Test_Strategy1.pdf` — full risk analysis and testing approach
+- `Group3_Developing a_Test_Plan1.pdf` — 50 test case documentation and objectives
+- `Group3_Assignment3_Test_Execution1.pdf` — defect log, sprint tracking, and results
 - `SoftwareTestingPresentation.pdf` — final capstone presentation slides
 - *`Youtube video walkthrough of the project` - https://www.youtube.com/watch?v=iQ2xqrG_-18
 
